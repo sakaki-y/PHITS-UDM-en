@@ -1,0 +1,69 @@
+:orphan:
+
+
+Download
+########################################
+
+https://github.com/sakaki-y/PHITS-UDM/tree/main/user-codes/kill
+
+|
+
+Descriptions
+########################################
+
+For a given particle in a given cell-ID, transport is stopped (KILL) if the kinetic energy E is less than or equal to,
+
+:math:`E<E_{\rm min}` and :math:`E_{\rm max}<E`
+
+|
+
+Name / Parameters
+########################################
+
+**[ user defined particle ]**
+
+.. list-table ::
+
+   * - Name
+     - kf-code
+     - Parameters
+   * - kill
+     - P0
+     - P1 P2 P3 P4 ...
+
+| P0 = Number of conditions you want to set
+| P1 = kf-code of the particle you want to kill
+| P2 = cell-ID of the particle you want to kill
+| P3 = :math:`E_{\rm min}` [MeV]
+| P4 = :math:`E_{\rm max}` [MeV]
+| ... (If P0>1, write the above 4 variables repeatedly)
+
+If P0=0, you can also kill the input file by preparing a text file ``kill.inp`` in the folder where the input file exists and writing the 4 variables repeatedly. (Lines containing information other than the four variables are skipped.)
+
+.. code-block::
+  :caption: kill.inp
+
+  $ kf cell Emin Emax
+
+    11 13 7 -1
+   -11 13 7 -1
+    22 13 7 -1
+
+
+|
+
+References
+########################################
+
+
+
+|
+
+Contact
+########################################
+
+
+
+
+
+

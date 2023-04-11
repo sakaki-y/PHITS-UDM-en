@@ -1,0 +1,48 @@
+:orphan:
+
+
+Download
+########################################
+
+https://github.com/sakaki-y/PHITS-UDM/tree/main/user-codes/K0_prod
+
+|
+
+Descriptions
+########################################
+
+Underestimation of :math:`K^0` production by photon in the forward region is corrected based on experimental data.
+
+|
+
+Name / Parameters
+########################################
+
+**[ user defined interaction ]**
+
+.. list-table ::
+
+   * - Name
+     - Bias
+     - Parameters
+   * - K0_prod
+     - (Bias value)
+     - (No parameters)
+
+|
+
+References
+########################################
+
+https://inspirehep.net/literature/1883861
+
+|
+
+Contact
+########################################
+
+
+
+
+
+

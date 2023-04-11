@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to create an executable file</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="How to test the executable file" href="../2/main.html" />
+    <link rel="prev" title="Download" href="../download/main.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> PHITS-UDM
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">How to use</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../download/main.html">Download</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">How to create an executable file</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-compile-phits-udm">How to compile PHITS-UDM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-compile-the-original-version-of-phits">How to compile the original version of PHITS</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../2/main.html">How to test the executable file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3/main.html">How to use PHITS-UDM</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tree_user_codes/user_codes.html">User Code Collection</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Others</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tree_others/contact.html">Contact</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">PHITS-UDM</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">How to create an executable file</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/tree_how_to_use/1/main.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-to-create-an-executable-file">
+<span id="sec-1"></span><h1>How to create an executable file<a class="headerlink" href="#how-to-create-an-executable-file" title="Permalink to this heading"></a></h1>
+<section id="how-to-compile-phits-udm">
+<span id="sec-phitsudm-compile"></span><h2>How to compile PHITS-UDM<a class="headerlink" href="#how-to-compile-phits-udm" title="Permalink to this heading"></a></h2>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Before compiling PHITS-UDM, it is recommended to check if the original PHITS can be compiled. (Ref: <a class="reference internal" href="#sec-phits-compile"><span class="std std-ref">How to compile the original version of PHITS</span></a>)</p>
+</div>
+<ul class="simple">
+<li><p>Download the PHITS-UDM (phits-udm-<strong>****</strong>.zip) from <a class="reference internal" href="../download/main.html#sec-download"><span class="std std-ref">here</span></a>.</p></li>
+</ul>
+<p>(If you have already downloaded the file, proceed to the next step.)</p>
+<ul class="simple">
+<li><p>Assume the path to the PHITS folder is as follows:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PhitsFolder</span><span class="o">=/</span><span class="n">Users</span><span class="o">/</span><span class="n">you</span><span class="o">/</span><span class="n">phits330A</span><span class="o">/</span><span class="n">phits</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Extract <code class="docutils literal notranslate"><span class="pre">phits-udm-********.zip</span></code> to obtain the <code class="docutils literal notranslate"><span class="pre">phits-udm</span></code> folder.</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">phits</span><span class="o">-</span><span class="n">udm</span>
+ <span class="o">|-</span> <span class="n">diff</span><span class="o">/</span>
+ <span class="o">|-</span> <span class="n">examples</span><span class="o">/</span>
+ <span class="o">|-</span> <span class="n">main</span><span class="o">.</span><span class="n">py</span>
+ <span class="o">|-</span> <span class="n">sample</span><span class="o">-</span><span class="n">code</span><span class="o">-</span><span class="mi">1</span><span class="o">/</span>
+ <span class="o">|-</span> <span class="n">udm_Parameter</span><span class="o">.</span><span class="n">f</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Copy the expansion folder <code class="docutils literal notranslate"><span class="pre">phits-udm</span></code> to the PHITS folder.</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cp -r &lt;Your Download Folder&gt;/phits-udm ${PhitsFolder}
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Move to <code class="docutils literal notranslate"><span class="pre">phits-udm</span></code>.</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cd ${PhitsFolder}/phits-udm/
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Run the Python script.</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">main</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>If successful, a <code class="docutils literal notranslate"><span class="pre">src-udm/</span></code> folder will be created in the PHITS folder and will look like this,</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!! Completed !!
+</pre></div>
+</div>
+<p>(If you see an error, please let me know. [<a class="reference internal" href="../../tree_others/contact.html#sec-contact"><span class="std std-ref">Contact</span></a>])</p>
+<ul class="simple">
+<li><p>Copy the PHITS-UDM sample code in <code class="docutils literal notranslate"><span class="pre">phits-udm/sample-code-1</span></code> to <code class="docutils literal notranslate"><span class="pre">src-udm/</span></code></p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cp</span> <span class="n">sample</span><span class="o">-</span><span class="n">code</span><span class="o">-</span><span class="mi">1</span><span class="o">/*</span> <span class="o">../</span><span class="n">src</span><span class="o">-</span><span class="n">udm</span><span class="o">/.</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Move to <code class="docutils literal notranslate"><span class="pre">src-udm/</span></code></p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cd ${PhitsFolder}/src-udm/
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Open <code class="docutils literal notranslate"><span class="pre">makefile</span></code> in <code class="docutils literal notranslate"><span class="pre">src-udm/</span></code> and specify the available compilers in the <code class="docutils literal notranslate"><span class="pre">ENVFLAGS</span></code> flag variable on line 8.</p></li>
+</ul>
+<p>Example) Compiling with Intel Fortran on Linux</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ENVFLAGS</span> <span class="o">=</span> <span class="n">LinIfort</span>
+</pre></div>
+</div>
+<p>Example) For Linux gfortran</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ENVFLAGS</span> <span class="o">=</span> <span class="n">LinGfort</span>
+</pre></div>
+</div>
+<p>Example) For Mac gfortran</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ENVFLAGS</span> <span class="o">=</span> <span class="n">MacGfort</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>If necessary, change the compiler to be used by default if you choose <code class="docutils literal notranslate"><span class="pre">ENVFLAGS</span></code> specified above.</p></li>
+</ul>
+<p>Example) If using Mac gfortran, modify line 243 of the <code class="docutils literal notranslate"><span class="pre">makefile</span></code> as follows</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">Before</span><span class="p">)</span> <span class="n">FC</span>        <span class="o">=</span> <span class="n">gfortran</span><span class="o">-</span><span class="n">mp</span><span class="o">-</span><span class="mf">4.8</span>
+<span class="p">(</span><span class="n">After</span> <span class="p">)</span> <span class="n">FC</span>        <span class="o">=</span> <span class="n">gfortran</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Type <code class="docutils literal notranslate"><span class="pre">make</span></code> (in <code class="docutils literal notranslate"><span class="pre">src-udm</span></code>)</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>If the compilation is successful, an executable file for PHITS-UDM is generated.</p></li>
+</ul>
+<p>Example) For Mac and intel fortran</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>ls ${PhitsFolder}/phits_MacIfort-udm
+</pre></div>
+</div>
+<p>Once the executable file is generated, proceed to the following section:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference internal" href="../2/main.html#sec-exe-test"><span class="std std-ref">How to test the executable file</span></a></p></li>
+<li><p><a class="reference internal" href="../3/main.html#sec-how-to-phitsudm"><span class="std std-ref">How to use PHITS-UDM</span></a></p></li>
+</ul>
+</div></blockquote>
+<p>If it fails, check if the PHITS original can be compiled according to [<a class="reference internal" href="#sec-phits-compile"><span class="std std-ref">How to compile the original version of PHITS</span></a>] below.</p>
+<p>Let me know if you can compile the original PHITS but not PHITS-UDM. [<a class="reference internal" href="../../tree_others/contact.html#sec-contact"><span class="std std-ref">Contact</span></a>]].</p>
+<p>The following compilers have been confirmed to work:</p>
+<ul class="simple">
+<li><p>ifort (Intel Fortran for Linux and Mac)</p></li>
+<li><p>gfotran (Linux. gcc version 8.3.0 (GCC))</p></li>
+<li><p>gfotran (MacOS. gcc version 10.3.0 (Homebrew GCC 10.3.0))</p></li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="how-to-compile-the-original-version-of-phits">
+<span id="sec-phits-compile"></span><h2>How to compile the original version of PHITS<a class="headerlink" href="#how-to-compile-the-original-version-of-phits" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Assume the path to the PHITS folder is as follows:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PhitsFolder</span><span class="o">=/</span><span class="n">Users</span><span class="o">/</span><span class="n">you</span><span class="o">/</span><span class="n">phits330A</span><span class="o">/</span><span class="n">phits</span><span class="o">/</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Move to <code class="docutils literal notranslate"><span class="pre">src</span></code> folder</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cd ${PhitsFolder}/src
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Open <code class="docutils literal notranslate"><span class="pre">makefile</span></code> and specify the available compilers in the <code class="docutils literal notranslate"><span class="pre">ENVFLAGS</span></code> flag variable on line 8.</p></li>
+</ul>
+<p>Example) Compiling with Intel Fortran on Linux</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ENVFLAGS</span> <span class="o">=</span> <span class="n">LinIfort</span>
+</pre></div>
+</div>
+<p>Example) For Linux gfortran</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ENVFLAGS</span> <span class="o">=</span> <span class="n">LinGfort</span>
+</pre></div>
+</div>
+<p>Example) For Mac gfortran</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ENVFLAGS</span> <span class="o">=</span> <span class="n">MacGfort</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>If necessary, change the compiler to be used by default if you choose <code class="docutils literal notranslate"><span class="pre">ENVFLAGS</span></code> specified above.</p></li>
+</ul>
+<p>Example) If using Mac gfortran, modify line 243 of the <code class="docutils literal notranslate"><span class="pre">makefile</span></code> as follows</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">Before</span><span class="p">)</span> <span class="n">FC</span>        <span class="o">=</span> <span class="n">gfortran</span><span class="o">-</span><span class="n">mp</span><span class="o">-</span><span class="mf">4.8</span>
+<span class="p">(</span><span class="n">After</span> <span class="p">)</span> <span class="n">FC</span>        <span class="o">=</span> <span class="n">gfortran</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Type <code class="docutils literal notranslate"><span class="pre">make</span></code> (in <code class="docutils literal notranslate"><span class="pre">src/</span></code> folder)</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cd ${PhitsFolder}/src
+make
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>If the compilation is successful, an executable file is generated.</p></li>
+</ul>
+<p>Example) For Mac and intel fortran</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>${PhitsFolder}/phits_MacIfort
+</pre></div>
+</div>
+<ul>
+<li><p>If it fails, refer to the following:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://phits.jaea.go.jp/manual/manualE-phits.pdf">Chapter 10 of the manual</a></p></li>
+<li><p>${PhitsFolder}/phits/manual/manualE-phits.pdf</p></li>
+<li><p><a class="reference external" href="https://phits.jaea.go.jp/image/Install-IntelFortran-OneAPI-en.pdf">How to install Intel Fortran</a></p></li>
+<li><p>${PhitsFolder}/phits/document/Install_gfortran_Windows-jp.pdf</p></li>
+<li><p><a class="reference external" href="https://meteor.nucl.kyushu-u.ac.jp/phitsforum/">PHITS Forum</a></p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../download/main.html" class="btn btn-neutral float-left" title="Download" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../2/main.html" class="btn btn-neutral float-right" title="How to test the executable file" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Yasuhito Sakaki.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

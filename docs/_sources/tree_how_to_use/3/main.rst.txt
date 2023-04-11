@@ -1,0 +1,182 @@
+.. _sec_how_to_phitsudm:
+
+############################################################
+How to use PHITS-UDM
+############################################################
+
+
+
+
+.. contents :: Contents
+   :depth: 2
+
+
+
+
+
+
+How to write input files
+############################################################
+
+|
+
+[ parameters ] section
+************************************************************
+
+
+To use the PHITS-UDM, the following parameter must be written in the ``[ parameters ]`` section.
+
+.. csv-table ::
+
+   Parameter,Value  , Description
+   iudmodel ,=0 , Off PHITS-UDM (default)
+            ,=1 , On PHITS-UDM
+
+Example)
+::
+
+    [ parameters ]
+
+    iudmodel = 1
+
+
+|
+
+[ user defined interaction ] section
+************************************************************
+
+Describe the following four types of information:
+
+1. Number of interaction modules to use
+
+   - Assign the number to ``n_int``
+
+2. Names of the interaction to used
+
+   - The string assigned to ``Name`` in the corresponding user code ``udm_int_*.f90``.
+
+3. Biassing factor
+
+   - You should set it to 1 by default.
+   - Setting a value greater than 1 will increase the frequency of interactions with small cross sections. In this case, the weight of the generated particle will be less than 1.
+
+4. Parameters
+
+   - Enter the parameters for the interaction module.
+   - If no parameters are needed, do not enter any.
+   - If you have more than one, enter them separated by spaces.
+
+Example)
+::
+
+    [ user defined interaction ]
+      n_int = 3
+
+    $ Name               Bias   Parameters
+      my_interaction_1   1
+      my_interaction_2   100    900000
+      my_interaction_3   100    900000  1.1  2.2
+
+
+|
+
+
+[ user defined particle ] section
+************************************************************
+
+Describe the following four types of information:
+
+1. Number of particle modules to use
+
+
+   - Assign the number to ``n_part``
+
+2. Names of the particle to used
+
+   - The string assigned to ``Name`` in the corresponding user code ``udm_part_*.f90``.
+
+3. kf-code
+
+   * Enter the ``kf-code`` you wish to assign to the particle.
+   * For particles not defined in PHITS, the allowed kf-code range is as follows:
+     :math:`900000 \le \text{|kf-code|} \le 999999`
+
+4. Parameters
+
+   - Enter the parameters for that particle module.
+   - If no parameters are needed, do not enter any.
+   - If you have more than one, enter them separated by spaces.
+
+Example)
+::
+
+    [ user defined particle ]
+      n_part = 2
+
+    $ Name             kfcode   Parameters
+      my_particle_1    900000
+      my_particle_2   -999999   1.0  2.0
+
+
+
+
+|
+
+.. _sec_sample_code:
+
+Explanation of sample code / How to create user code
+############################################################
+
+See :download:`this note<samples-en.pdf>`.
+
+User code must be written in ``Fortran 90``. ``Fortran 90`` is a simple language and does not require complex syntax to write user code. Even if you are unfamiliar with programming, you can create your user code by referring to [:ref:`user_codes`]. 
+
+
+
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+
+
+
+.. (appears in notes)
+.. * :download:`udm_int_sample1.f90 <phits-udm-sample1/udm_int_sample1.f90>`
+.. * :download:`udm_int_sample2.f90 <phits-udm-sample1/udm_int_sample2.f90>`
+.. * :download:`udm_part_sample1.f90<phits-udm-sample1/udm_part_sample1.f90>`
+.. * :download:`udm_part_sample2.f90<phits-udm-sample1/udm_part_sample2.f90>`
+.. * :download:`udm_Manager.f90     <phits-udm-sample1/udm_Manager.f90>`
+
+
+
+
+
+

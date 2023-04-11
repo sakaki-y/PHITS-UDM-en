@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PHITS-UDM</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Download" href="tree_how_to_use/download/main.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="#" class="icon icon-home"> PHITS-UDM
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">How to use</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tree_how_to_use/download/main.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tree_how_to_use/1/main.html">How to create an executable file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tree_how_to_use/2/main.html">How to test the executable file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tree_how_to_use/3/main.html">How to use PHITS-UDM</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tree_user_codes/user_codes.html">User Code Collection</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Others</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tree_others/contact.html">Contact</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">PHITS-UDM</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home"></a></li>
+      <li class="breadcrumb-item active">PHITS-UDM</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="phits-udm">
+<h1>PHITS-UDM<a class="headerlink" href="#phits-udm" title="Permalink to this heading"></a></h1>
+<p><strong>PHITS-UDM (User Defined Model) is an extension to PHITS that implements new interactions and particles.</strong></p>
+<ul class="simple">
+<li><p>[<a class="reference internal" href="tree_how_to_use/download/main.html#sec-download"><span class="std std-ref">Download</span></a>]</p></li>
+</ul>
+<hr class="docutils" />
+<p>The following two sections will be introduced:</p>
+<div class="line-block">
+<div class="line"><code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">user</span> <span class="pre">defined</span> <span class="pre">interaction</span> <span class="pre">]</span></code></div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">user</span> <span class="pre">defined</span> <span class="pre">particle</span> <span class="pre">]</span></code></div>
+</div>
+<p>You can also <a class="reference internal" href="tree_user_codes/user_codes.html#user-codes"><span class="std std-ref">share</span></a> the original source code used in your implementation with other users.</p>
+<hr class="docutils" />
+<p><code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">user</span> <span class="pre">defined</span> <span class="pre">interaction</span> <span class="pre">]</span></code></p>
+<p>The user describes in templated fortran code the cross section, distribution, and incident particles that cause the interaction to be implemented. Recompiling PHITS with that code implements the interaction.</p>
+<p>Templated fortran code is simplified. See [<a class="reference internal" href="tree_how_to_use/3/main.html#sec-sample-code"><span class="std std-ref">Explanation of sample code / How to create user code</span></a>] for details.</p>
+<p>The following incident particles are supported in the current version. (Feel free to let us know if you prefer other particles.)</p>
+<ul class="simple">
+<li><p>Photons</p></li>
+<li><p>Electrons, positrons</p></li>
+<li><p>Muons</p></li>
+<li><p>Neutrinos</p></li>
+<li><p>User-defined particles</p></li>
+</ul>
+<hr class="docutils" />
+<p><code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">user</span> <span class="pre">defined</span> <span class="pre">particle</span> <span class="pre">]</span></code></p>
+<p>The user describes the masses, lifetimes, and decay patterns of user-defined particles in templated fortran code. The interaction is implemented by recompiling PHITS with it.</p>
+<p>The following values can be assigned as <code class="docutils literal notranslate"><span class="pre">kf-code</span></code> for user-defined particles:</p>
+<p><span class="math notranslate nohighlight">\(900000 \leq |\text{kf-code}| \leq 999999\)</span></p>
+<p>You can use the kf-code in <code class="docutils literal notranslate"><span class="pre">part</span></code> of the tally section or <code class="docutils literal notranslate"><span class="pre">proj</span></code> of the source section.</p>
+<p>The decay patterns and lifetimes of particles already implemented in PHITS can be easily changed.</p>
+<hr class="docutils" />
+<div class="line-block">
+<div class="line">Contact: Yasuhito Sakaki (KEK)</div>
+<div class="line"><cite>sakakiy _AT_ post.kek.jp</cite></div>
+</div>
+<p>Collaborators: Shin-ichiro Abe (JAEA), Hiroshi Iwase (KEK)</p>
+<hr class="docutils" />
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tree_how_to_use/download/main.html" class="btn btn-neutral float-right" title="Download" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Yasuhito Sakaki.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

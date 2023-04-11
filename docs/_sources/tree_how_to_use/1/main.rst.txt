@@ -1,0 +1,207 @@
+.. _sec_1:
+
+####################################################
+How to create an executable file
+####################################################
+
+.. _sec_PHITSUDM_compile:
+
+How to compile PHITS-UDM
+####################################################
+
+.. hint ::
+
+    Before compiling PHITS-UDM, it is recommended to check if the original PHITS can be compiled. (Ref: :ref:`sec_PHITS_compile`)
+
+* Download the PHITS-UDM (phits-udm-********.zip) from :ref:`here<sec_download>`.
+
+(If you have already downloaded the file, proceed to the next step.)
+
+* Assume the path to the PHITS folder is as follows:
+
+::
+
+    PhitsFolder=/Users/you/phits330A/phits
+
+* Extract ``phits-udm-********.zip`` to obtain the ``phits-udm`` folder.
+
+::
+
+    phits-udm
+     |- diff/
+     |- examples/
+     |- main.py
+     |- sample-code-1/
+     |- udm_Parameter.f
+
+
+* Copy the expansion folder ``phits-udm`` to the PHITS folder.
+
+::
+
+    cp -r <Your Download Folder>/phits-udm ${PhitsFolder}
+
+* Move to ``phits-udm``.
+
+::
+
+    cd ${PhitsFolder}/phits-udm/
+
+* Run the Python script.
+
+::
+
+    python main.py
+
+If successful, a ``src-udm/`` folder will be created in the PHITS folder and will look like this,
+
+::
+
+    !! Completed !!
+
+(If you see an error, please let me know. [:ref:`sec_contact`])
+
+* Copy the PHITS-UDM sample code in ``phits-udm/sample-code-1`` to ``src-udm/``
+
+::
+
+    cp sample-code-1/* ../src-udm/.
+
+* Move to ``src-udm/``
+
+::
+
+    cd ${PhitsFolder}/src-udm/
+
+* Open ``makefile`` in ``src-udm/`` and specify the available compilers in the ``ENVFLAGS`` flag variable on line 8.
+
+Example) Compiling with Intel Fortran on Linux
+::
+
+    ENVFLAGS = LinIfort
+
+Example) For Linux gfortran
+::
+
+    ENVFLAGS = LinGfort
+
+Example) For Mac gfortran
+::
+
+    ENVFLAGS = MacGfort
+
+* If necessary, change the compiler to be used by default if you choose ``ENVFLAGS`` specified above.
+
+Example) If using Mac gfortran, modify line 243 of the ``makefile`` as follows
+::
+
+    (Before) FC        = gfortran-mp-4.8
+    (After ) FC        = gfortran
+
+* Type ``make`` (in ``src-udm``)
+
+::
+
+    make
+
+* If the compilation is successful, an executable file for PHITS-UDM is generated.
+
+Example) For Mac and intel fortran
+
+::
+
+    ls ${PhitsFolder}/phits_MacIfort-udm
+
+Once the executable file is generated, proceed to the following section:
+
+    - :ref:`sec_exe_test`
+    - :ref:`sec_how_to_phitsudm`
+
+If it fails, check if the PHITS original can be compiled according to [:ref:`sec_PHITS_compile`] below.
+
+Let me know if you can compile the original PHITS but not PHITS-UDM. [:ref:`sec_contact`]].
+
+The following compilers have been confirmed to work:
+
+* ifort (Intel Fortran for Linux and Mac)
+* gfotran (Linux. gcc version 8.3.0 (GCC))
+* gfotran (MacOS. gcc version 10.3.0 (Homebrew GCC 10.3.0))
+
+
+
+
+
+|
+|
+
+
+.. _sec_PHITS_compile:
+
+How to compile the original version of PHITS
+####################################################
+
+* Assume the path to the PHITS folder is as follows:
+
+::
+
+    PhitsFolder=/Users/you/phits330A/phits/
+
+* Move to ``src`` folder
+
+::
+
+    cd ${PhitsFolder}/src
+
+
+* Open ``makefile`` and specify the available compilers in the ``ENVFLAGS`` flag variable on line 8.
+
+Example) Compiling with Intel Fortran on Linux
+::
+
+    ENVFLAGS = LinIfort
+
+Example) For Linux gfortran
+::
+
+    ENVFLAGS = LinGfort
+
+Example) For Mac gfortran
+::
+
+    ENVFLAGS = MacGfort
+
+* If necessary, change the compiler to be used by default if you choose ``ENVFLAGS`` specified above.
+
+Example) If using Mac gfortran, modify line 243 of the ``makefile`` as follows
+::
+
+    (Before) FC        = gfortran-mp-4.8
+    (After ) FC        = gfortran
+
+* Type ``make`` (in ``src/`` folder)
+
+::
+
+    cd ${PhitsFolder}/src
+    make
+
+
+* If the compilation is successful, an executable file is generated.
+
+Example) For Mac and intel fortran
+
+::
+
+    ${PhitsFolder}/phits_MacIfort
+
+
+* If it fails, refer to the following:
+
+    - `Chapter 10 of the manual <https://phits.jaea.go.jp/manual/manualE-phits.pdf>`_
+    - ${PhitsFolder}/phits/manual/manualE-phits.pdf
+    - `How to install Intel Fortran <https://phits.jaea.go.jp/image/Install-IntelFortran-OneAPI-en.pdf>`_
+    - ${PhitsFolder}/phits/document/Install_gfortran_Windows-jp.pdf
+    - `PHITS Forum <https://meteor.nucl.kyushu-u.ac.jp/phitsforum/>`_
+
+
+

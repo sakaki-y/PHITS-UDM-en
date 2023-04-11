@@ -1,0 +1,87 @@
+##############################
+PHITS-UDM
+##############################
+
+
+**PHITS-UDM (User Defined Model) is an extension to PHITS that implements new interactions and particles.**
+
+* [:ref:`Download<sec_download>`]
+
+------------------------
+
+The following two sections will be introduced:
+
+| ``[ user defined interaction ]``
+| ``[ user defined particle ]``
+
+
+You can also :ref:`share<user_codes>` the original source code used in your implementation with other users.
+
+------------------------
+
+``[ user defined interaction ]``
+
+The user describes in templated fortran code the cross section, distribution, and incident particles that cause the interaction to be implemented. Recompiling PHITS with that code implements the interaction.
+
+Templated fortran code is simplified. See [:ref:`sec_sample_code`] for details.
+
+The following incident particles are supported in the current version. (Feel free to let us know if you prefer other particles.)
+
+* Photons
+* Electrons, positrons
+* Muons
+* Neutrinos
+* User-defined particles
+
+------------------------
+
+``[ user defined particle ]``
+
+The user describes the masses, lifetimes, and decay patterns of user-defined particles in templated fortran code. The interaction is implemented by recompiling PHITS with it.
+
+The following values can be assigned as ``kf-code`` for user-defined particles:
+
+:math:`900000 \leq |\text{kf-code}| \leq 999999`
+
+You can use the kf-code in ``part`` of the tally section or ``proj`` of the source section.
+
+The decay patterns and lifetimes of particles already implemented in PHITS can be easily changed.
+
+------------------------
+
+| Contact: Yasuhito Sakaki (KEK)
+| `sakakiy _AT_ post.kek.jp`
+
+Collaborators: Shin-ichiro Abe (JAEA), Hiroshi Iwase (KEK)
+
+------------------------
+
+
+.. toctree::
+   :caption: How to use
+   :hidden:
+
+   /tree_how_to_use/download/main
+   /tree_how_to_use/1/main
+   /tree_how_to_use/2/main
+   /tree_how_to_use/3/main
+
+
+.. toctree::
+   :caption: Examples
+   :hidden:
+
+   /tree_user_codes/user_codes
+
+.. toctree::
+   :caption: Others
+   :hidden:
+
+   /tree_others/contact
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+:orphan:
+
+
+Download
+########################################
+
+https://github.com/sakaki-y/PHITS-UDM/tree/main/user-codes/ee2mumu
+
+|
+
+Descriptions
+########################################
+
+Muon pairing process involving the annihilation of a positron (:math:`E_{e^+}>43.7` GeV) with an atomic electron.
+
+:math:`e^+e^-_{\rm atomic} \to \mu^+\mu^-`
+
+|
+
+Name / Parameters
+########################################
+
+**[ user defined interaction ]**
+
+.. list-table ::
+
+   * - Name
+     - Bias
+     - Parameters
+   * - ALPs
+     - (Bias value)
+     - (No parameters)
+
+|
+
+References
+########################################
+
+
+|
+
+Contact
+########################################
+
+
+
+
+
+

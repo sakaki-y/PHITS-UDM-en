@@ -1,0 +1,47 @@
+:orphan:
+
+
+Download
+########################################
+
+https://github.com/sakaki-y/PHITS-UDM/tree/main/user-codes/muon-decay
+
+|
+
+Descriptions
+########################################
+
+Forced muon decay
+
+|
+
+Name / Parameters
+########################################
+
+**[ user defined particle ]**
+
+.. list-table ::
+
+   * - Name
+     - kf-code
+     - Parameters
+   * - MuonPlus
+     - -13
+     - (no parameters)
+
+|
+
+References
+########################################
+
+
+|
+
+Contact
+########################################
+
+
+
+
+
+

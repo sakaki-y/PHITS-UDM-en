@@ -1,0 +1,135 @@
+.. _sec_exe_test:
+
+############################################################
+How to test the executable file
+############################################################
+
+How to run the example files
+##############################
+
+Here, the path to the PHITS folder is assumed to be as follows, as in :ref:`When compiling PHITS-UDM<sec_PHITSUDM_compile>`
+
+::
+
+    PhitsFolder=/Users/you/phits330A/phits/
+
+Go to the ``examples/`` folder in the folder you downloaded
+
+::
+
+    cd ${PhitsFolder}/phits-udm/examples
+
+Go to the ``01/`` folder
+
+::
+
+    cd 01/
+
+Run the input file (``main.inp``) in that folder with the executable you just compiled
+
+Example) Executable file compiled on Mac, Intel Fortran.
+
+::
+
+    ../../../phits_MacIfort-udm < main.inp
+
+or
+
+::
+
+    ${PhitsFolder}/phits_MacGfort-udm < main.inp
+
+If successful, the following image file is generated. The particle represented by ``part = 900000`` is a user-defined particle, and ``part = nu_e`` is an electron neutrino produced by decay from the user-defined particle.
+
+::
+
+    1_flux_xz.eps
+    2_production_energy.eps
+    3_decay_energy.eps
+
+| :download:`1_flux_xz.pdf`
+| :download:`2_production_energy.pdf`
+| :download:`3_decay_energy.pdf`
+
+
+* For detailed usage of PHITS-UDM, see below.
+    [:ref:`sec_how_to_phitsudm`]
+
+|
+|
+
+
+
+example file description
+##############################
+
+Recall that the sample user files were stored in the ``sample-code-1/`` that you downloaded.
+
+::
+
+    $ ls ${PhitsFolder}/phits-udm/sample-code-1/*
+
+    udm_Manager.f90
+    udm_int_sample1.f90
+    udm_int_sample2.f90
+    udm_part_sample1.f90
+    udm_part_sample2.f90
+
+
+User-defined interactions are described in ``udm_int_*.f90`` and user-defined particles in ``udm_part_*.f90``.
+For details on how to create these user-defined files, see [:ref:`sec_how_to_phitsudm`].
+
+* ``udm_int_sample1.f90``
+
+   A sample file defining interactions between electrons or positrons and atoms. An interaction is defined where the user-defined particle will be emitted from the electron or positron.
+
+* ``udm_part_sample1.f90``
+
+    Neutral particle with mass 50 MeV and lifetime 0.1 ns.
+    Decays into 2 or 3 electron neutrinos. (unphysical, but for simplicity)
+
+* ``udm_Manager.f90``
+
+    A manager file that lists the module names of the user-defined files you wish to use.
+
+
+* ``examples/01/main.inp``
+
+    :math:`2 \times 2 \times 10 ~{\rm cm}^3` water target and observe a new particle (kf-code = 900000) produced by the electron beam.
+
+        - ``1_flux_xz.eps``
+
+            The flux of electrons, positrons, photons, and the new particle produced by the target. Also, the flux of electron neutrinos (kf-code = 12) is produced by the decay of new particles.
+
+        - ``2_production_energy.eps``
+
+            Energy distribution of generated the new particle, etc.
+
+        - ``3_decay_energy.eps``
+
+            Energy distribution of electron neutrinos produced by the decay of the new particle.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

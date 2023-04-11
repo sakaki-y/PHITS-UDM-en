@@ -1,0 +1,70 @@
+:orphan:
+
+
+Download
+########################################
+
+https://github.com/sakaki-y/PHITS-UDM/tree/main/phits-udm/sample-code-1
+
+(PHITS-UDMに同梱されています。)
+
+|
+
+References
+########################################
+
+https://github.com/sakaki-y/PHITS-UDM
+
+|
+
+Name / Parameters
+########################################
+
+**[ user defined interaction ]**
+
+.. list-table ::
+
+   * - Name
+     - Bias
+     - Parameters
+   * - my_interaction_1
+     - (Bias value)
+     - <P1>
+   * - my_interaction_2
+     - (Bias value)
+     - <P1>
+
+<P1> = 放出される新粒子の kf-code
+
+**[ user defined particle ]**
+
+.. list-table ::
+
+   * - Name
+     - kf-code
+     - Parameters
+   * - my_particle_1
+     - (kf-code)
+     - (No parameters)
+   * - my_particle_2
+     - (kf-code)
+     - <mass [MeV]>   <lifetime [second]>
+
+|
+
+Descriptions
+########################################
+
+:ref:`sec_sample_code` を参照してください。
+
+
+|
+
+Contact
+########################################
+
+
+
+
+
+
