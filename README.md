@@ -2,6 +2,8 @@
 
 Document: https://sakaki-y.github.io/PHITS-UDM-en/
 
+日本語: https://sakaki-y.github.io/PHITS-UDM/
+
 ---
 
 **PHITS-UDM (User Defined Model) is an extension to PHITS that implements new interactions and particles.**
