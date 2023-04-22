@@ -10,7 +10,7 @@ Document: https://sakaki-y.github.io/PHITS-UDM-en/
 
 
 
-The following two sections will be introduced:
+The following two sections are introduced:
 
 * [ user defined interaction ]
 * [ user defined particle ]

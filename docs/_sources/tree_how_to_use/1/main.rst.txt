@@ -59,9 +59,9 @@ If successful, a ``src-udm/`` folder will be created in the PHITS folder and wil
 
     !! Completed !!
 
-(If you see an error, please let me know. [:ref:`sec_contact`])
+(If you see an error, please let me know. [`PHITS Forum <https://meteor.nucl.kyushu-u.ac.jp/phitsforum/>`_ / :ref:`sec_contact`])
 
-* Copy the PHITS-UDM sample code in ``phits-udm/sample-code-1`` to ``src-udm/``
+* Copy the PHITS-UDM sample codes in ``phits-udm/sample-code-1`` to ``src-udm/``
 
 ::
 
@@ -104,7 +104,7 @@ Example) If using Mac gfortran, modify line 243 of the ``makefile`` as follows
 
     make
 
-* If the compilation is successful, an executable file for PHITS-UDM is generated.
+* If the compilation is successful, **an executable file for PHITS-UDM is generated in the PHITS folder**.
 
 Example) For Mac and intel fortran
 

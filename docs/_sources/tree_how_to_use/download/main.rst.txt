@@ -11,7 +11,7 @@ Download
 After downloading, create the PHITS-UDM executable file by referring to [:ref:`sec_1`].
 
 
-**(software requirements)**
+**(Software requirements)**
 
 * PHITS 3.30 or higher
 

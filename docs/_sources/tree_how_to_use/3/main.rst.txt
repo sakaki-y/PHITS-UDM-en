@@ -58,11 +58,11 @@ Describe the following four types of information:
 3. Biassing factor
 
    - You should set it to 1 by default.
-   - Setting a value greater than 1 will increase the frequency of interactions with small cross sections. In this case, the weight of the generated particle will be less than 1.
+   - Setting a value greater than 1 increase the frequency of interactions with small cross sections. In this case, the weight of the generated particles are less than 1.
 
 4. Parameters
 
-   - Enter the parameters for the interaction module.
+   - Enter the parameters for each interaction module.
    - If no parameters are needed, do not enter any.
    - If you have more than one, enter them separated by spaces.
 
@@ -97,13 +97,13 @@ Describe the following four types of information:
 
 3. kf-code
 
-   * Enter the ``kf-code`` you wish to assign to the particle.
+   * Enter the ``kf-code`` you want to assign to the particle.
    * For particles not defined in PHITS, the allowed kf-code range is as follows:
      :math:`900000 \le \text{|kf-code|} \le 999999`
 
 4. Parameters
 
-   - Enter the parameters for that particle module.
+   - Enter the parameters for each particle module.
    - If no parameters are needed, do not enter any.
    - If you have more than one, enter them separated by spaces.
 

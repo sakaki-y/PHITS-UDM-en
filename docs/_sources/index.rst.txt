@@ -9,7 +9,7 @@ PHITS-UDM
 
 ------------------------
 
-The following two sections will be introduced:
+The following two sections are introduced:
 
 | ``[ user defined interaction ]``
 | ``[ user defined particle ]``
@@ -21,23 +21,23 @@ You can also :ref:`share<user_codes>` the original source code used in your impl
 
 ``[ user defined interaction ]``
 
-The user describes in templated fortran code the cross section, distribution, and incident particles that cause the interaction to be implemented. Recompiling PHITS with that code implements the interaction.
+The user describes in templated fortran code the cross section, distribution, and incident particles that cause the interaction to be implemented. Recompiling that code implements the interaction in PHITS.
 
 Templated fortran code is simplified. See [:ref:`sec_sample_code`] for details.
 
 The following incident particles are supported in the current version. (Feel free to let us know if you prefer other particles.)
 
-* Photons
-* Electrons, positrons
-* Muons
-* Neutrinos
+* Photon
+* Electron, positron
+* Muon
+* Neutrino
 * User-defined particles
 
 ------------------------
 
 ``[ user defined particle ]``
 
-The user describes the masses, lifetimes, and decay patterns of user-defined particles in templated fortran code. The interaction is implemented by recompiling PHITS with it.
+The user describes the masses, lifetimes, and decay patterns of user-defined particles in templated fortran code. The particle properties are implemented by recompiling PHITS with the user codes.
 
 The following values can be assigned as ``kf-code`` for user-defined particles:
 
@@ -45,7 +45,7 @@ The following values can be assigned as ``kf-code`` for user-defined particles:
 
 You can use the kf-code in ``part`` of the tally section or ``proj`` of the source section.
 
-The decay patterns and lifetimes of particles already implemented in PHITS can be easily changed.
+The decay patterns and lifetimes of the particles (like muons) already implemented in PHITS can be easily changed.
 
 ------------------------
 

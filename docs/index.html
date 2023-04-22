@@ -89,7 +89,7 @@
 <li><p>[<a class="reference internal" href="tree_how_to_use/download/main.html#sec-download"><span class="std std-ref">Download</span></a>]</p></li>
 </ul>
 <hr class="docutils" />
-<p>The following two sections will be introduced:</p>
+<p>The following two sections are introduced:</p>
 <div class="line-block">
 <div class="line"><code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">user</span> <span class="pre">defined</span> <span class="pre">interaction</span> <span class="pre">]</span></code></div>
 <div class="line"><code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">user</span> <span class="pre">defined</span> <span class="pre">particle</span> <span class="pre">]</span></code></div>
@@ -97,23 +97,23 @@
 <p>You can also <a class="reference internal" href="tree_user_codes/user_codes.html#user-codes"><span class="std std-ref">share</span></a> the original source code used in your implementation with other users.</p>
 <hr class="docutils" />
 <p><code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">user</span> <span class="pre">defined</span> <span class="pre">interaction</span> <span class="pre">]</span></code></p>
-<p>The user describes in templated fortran code the cross section, distribution, and incident particles that cause the interaction to be implemented. Recompiling PHITS with that code implements the interaction.</p>
+<p>The user describes in templated fortran code the cross section, distribution, and incident particles that cause the interaction to be implemented. Recompiling that code implements the interaction in PHITS.</p>
 <p>Templated fortran code is simplified. See [<a class="reference internal" href="tree_how_to_use/3/main.html#sec-sample-code"><span class="std std-ref">Explanation of sample code / How to create user code</span></a>] for details.</p>
 <p>The following incident particles are supported in the current version. (Feel free to let us know if you prefer other particles.)</p>
 <ul class="simple">
-<li><p>Photons</p></li>
-<li><p>Electrons, positrons</p></li>
-<li><p>Muons</p></li>
-<li><p>Neutrinos</p></li>
+<li><p>Photon</p></li>
+<li><p>Electron, positron</p></li>
+<li><p>Muon</p></li>
+<li><p>Neutrino</p></li>
 <li><p>User-defined particles</p></li>
 </ul>
 <hr class="docutils" />
 <p><code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">user</span> <span class="pre">defined</span> <span class="pre">particle</span> <span class="pre">]</span></code></p>
-<p>The user describes the masses, lifetimes, and decay patterns of user-defined particles in templated fortran code. The interaction is implemented by recompiling PHITS with it.</p>
+<p>The user describes the masses, lifetimes, and decay patterns of user-defined particles in templated fortran code. The particle properties are implemented by recompiling PHITS with the user codes.</p>
 <p>The following values can be assigned as <code class="docutils literal notranslate"><span class="pre">kf-code</span></code> for user-defined particles:</p>
 <p><span class="math notranslate nohighlight">\(900000 \leq |\text{kf-code}| \leq 999999\)</span></p>
 <p>You can use the kf-code in <code class="docutils literal notranslate"><span class="pre">part</span></code> of the tally section or <code class="docutils literal notranslate"><span class="pre">proj</span></code> of the source section.</p>
-<p>The decay patterns and lifetimes of particles already implemented in PHITS can be easily changed.</p>
+<p>The decay patterns and lifetimes of the particles (like muons) already implemented in PHITS can be easily changed.</p>
 <hr class="docutils" />
 <div class="line-block">
 <div class="line">Contact: Yasuhito Sakaki (KEK)</div>

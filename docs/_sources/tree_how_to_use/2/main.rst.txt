@@ -4,7 +4,7 @@
 How to test the executable file
 ############################################################
 
-How to run the example files
+How to run example files
 ##############################
 
 Here, the path to the PHITS folder is assumed to be as follows, as in :ref:`When compiling PHITS-UDM<sec_PHITSUDM_compile>`
@@ -39,7 +39,7 @@ or
 
     ${PhitsFolder}/phits_MacGfort-udm < main.inp
 
-If successful, the following image file is generated. The particle represented by ``part = 900000`` is a user-defined particle, and ``part = nu_e`` is an electron neutrino produced by decay from the user-defined particle.
+If successful, the following EPS files are generated. The particle represented by ``part = 900000`` is a user-defined particle, and ``part = nu_e`` is an electron neutrino produced by decay from the user-defined particle.
 
 ::
 
