@@ -58,6 +58,9 @@ Collaborators: Shin-ichiro Abe (JAEA), Hiroshi Iwase (KEK)
 
 
 .. toctree::
+   news
+
+.. toctree::
    :caption: How to use
    :hidden:
 
@@ -65,7 +68,6 @@ Collaborators: Shin-ichiro Abe (JAEA), Hiroshi Iwase (KEK)
    /tree_how_to_use/1/main
    /tree_how_to_use/2/main
    /tree_how_to_use/3/main
-
 
 .. toctree::
    :caption: Examples
