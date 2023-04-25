@@ -2,4 +2,5 @@
 News
 ##############################
 
+2023/04/25:  Update :ref:`user_codes_pni`. The lower/higher energy limit has been widened.
 2023/04/22:  PHITS 3.31 is supported.

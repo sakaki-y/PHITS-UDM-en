@@ -1,5 +1,12 @@
 :orphan:
 
+.. _user_codes_pni:
+
+
+########################################
+Faster photonuclear reactions
+########################################
+
 
 Download
 ########################################
@@ -11,9 +18,9 @@ https://github.com/sakaki-y/PHITS-UDM/tree/main/user-codes/pni
 Descriptions
 ########################################
 
-Speeds up the PHITS photonuclear reaction (:math:`200 {\rm MeV} < E_{\gamma} < 8229 {\rm MeV}, Z \ge 26`).
+Speeds up the PHITS photonuclear reaction (:math:`140 {\rm MeV} \le E_{\gamma} \le 1 {\rm TeV}, Z \ge 26`).
 
-Below 200 MeV can be further sped up by using nuclear data.
+Below 140 MeV can be further sped up by using nuclear data.
 
 There is no correlation between final states.
 
